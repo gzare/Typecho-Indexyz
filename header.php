@@ -67,7 +67,7 @@
 		<a href="<?php $this->options->siteUrl(); ?>" class="title"><?php $this->options->title() ?></a>
 		<h2 class="description"><?php $this->options->description() ?></h2>
 		<div>
-			<nav class="nav-menu" role="navigation">
+			<nav id="nav-menu" role="navigation">
 				<a<?php if($this->is('index')): ?> class="actived"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
 				<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>

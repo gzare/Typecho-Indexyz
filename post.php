@@ -14,7 +14,7 @@
 					</span>
 					<span class="post-meta">
 						<span>分类: </span>
-						<a href="<?php $this->category(',')->permalink(); ?>" itemprop="url" rel="index">
+						<a href="" itemprop="url" rel="index">
 							<span itemprop="name"><?php $this->category(','); ?></span>
 						</a>
                     </span>

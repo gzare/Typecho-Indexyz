@@ -25,25 +25,25 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					</span>
 					<span class="post-meta">
 						<span>分类: </span>
-						<a href="<?php $this->category(',')->permalink(); ?>" itemprop="url" rel="index">
+						<a href="" itemprop="url" rel="index">
 							<span itemprop="name"><?php $this->category(','); ?></span>
 						</a>
                     	
                 </div>
             </header>
             <div class="post-body" itemprop="articleBody">
-                <?php $this->excerpt(70, ''); ?>
+               <p> <?php $this->excerpt(70, ''); ?></p>
             </div>
                 <div class="post-more-link">
                     <a class="btn" href="<?php $this->permalink() ?>" title="<?php $this->title() ?>" rel="contents">
-                        <?php $this->content('阅读更多'); ?>
+                       阅读更多
                     </a>
                 </div>
         </article>
     <?php endwhile; ?>
 </section>
 <nav class="pagination-wapper">
-	 <?php $this->pageNav('', '后一页 »',5,'...',array('wrapTag' => 'ul', 'wrapClass' => 'pagination','itemTag' => 'li','itemClass'=>'page-item','textTag' => 'span','currentClass' => 'actived')); ?>
+	 <?php $this->pageNav('', '后一页 »',5,'...',array('wrapTag' => 'ul', 'wrapClass' => 'pagination','itemTag' => 'li','itemClass' => 'page-item','textTag' => 'span','currentClass' => 'page-item active','nextClass' => 'page-item')); ?>
 </nav>
 </div>
 
