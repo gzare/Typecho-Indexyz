@@ -1,0 +1,4 @@
+主题使用须知：
+将
+的195行$itemBegin注释掉，添加这一行
+$itemBegin = empty($itemTag) ? '' : ('<' . $itemTag . (empty($itemClass) ? '' : ' class="' . $itemClass . '"') . '>');
