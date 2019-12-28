@@ -35,6 +35,9 @@
     			<?php if (in_array('_isPreload', $this->options->StaticOptimize)): ?>
     		    	<link rel="preload" href="//cdn.jsdelivr.net/npm/normalize.css" as="style">
     				<link rel="preload" href="//cdn.jsdelivr.net/npm/spectre.css" as="style">
+                            					<link rel="preload" href="<?php $this->options->themeUrl('static/css/main.css'); ?>" as="style">
+    					<link rel="preload" href="<?php $this->options->themeUrl('static/css/friends.css'); ?>" as="style">
+    					<link rel="preload" href="<?php $this->options->themeUrl('static/css/syntax.css'); ?>" as="style">
     			<?php endif; ?>
     		    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/normalize.css">
     			<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/spectre.css">
